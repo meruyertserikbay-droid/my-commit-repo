@@ -1,0 +1,79 @@
+:root {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Sixtyfour Convergence', sans-serif;
+}
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+main section p {
+    font-size: 18px;
+}
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+header nav {
+    margin-top: 10px; /* жоғарғы шетіне бос орын қосады */
+}
+
+header nav a {
+    margin: 0 15px; /* әр сілтеме арасын үлкейту */
+    text-decoration: none;
+    color: #333;
+}
+#about {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+}
+#testimonials {
+    padding: 50px;
+    background-color: #e6f7ff;
+    text-align: center;
+}
+
+#testimonials h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.testimonial-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px auto;
+    width: 300px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+
