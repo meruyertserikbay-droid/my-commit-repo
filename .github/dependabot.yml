@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"  # Егер сенің жобаңда басқа package manager болса, оны өзгертуге болады
+    directory: "/"            # Жобаның түбір қалтасы
+    schedule:
+      interval: "weekly"      # Dependabot аптасына бір рет тексереді
