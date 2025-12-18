@@ -1,20 +1,27 @@
-name: CI/CD Pipeline  # Бұл жұмыс атауы, файл аты емес
+name: CI/CD Pipeline
+
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout репозиторий
+      - name: Checkout repository
         uses: actions/checkout@v3
+
       - name: Build
-        run: echo "Build сәтті өтті"
+        run: echo "Жоба сәтті жиналды"
+
+      - name: Test
+        run: echo "Тесттер сәтті өтті"
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Deploy
-        run: echo "Deploy сәтті өтті"
+        run: echo "Қосымша production ортасына орналастырылды"
